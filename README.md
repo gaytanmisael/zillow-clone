@@ -1,29 +1,88 @@
-# Create T3 App
+# Zillow Clone
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+## Phase 1: Planning
 
-## What's next? How do I make an app with this?
+- [x] Define Requirements
+  - [x] Outline core features (listing properties, user roles, inquiries, etc.).
+  - [x] Determine user roles and permissions (agents, buyers, admins).
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+## Phase 2: Setup
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+- [ ] Environment Setup
+  - [ ] Set up the development environment (Node.js, Next.js).
+  - [ ] Initialize the project repository (Git).
+- [ ] Database Configuration
+  - [ ] Choose your database as a service (e.g., Supabase).
+  - [ ] Create the database and set up connection strings.
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Drizzle](https://orm.drizzle.team)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+## Phase 3: Authentication
 
-## Learn More
+- [ ] Integrate Clerk for Authentication
+  - [ ] Set up Clerk for user management and roles.
+  - [ ] Implement authentication flows (sign up, sign in, role assignment).
+- [ ] Error Management (Sentry)
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+## Phase 4: Backend Development
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+- [x] Database Schema Implementation
+  - [x] Implement the Drizzle ORM schema for users, properties, agencies, etc.
+  - [x] Create migration scripts to set up the database structure.
+- [ ] API Development
+  - [ ] Build RESTful API endpoints for properties, users, favorites, inquiries, etc.
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+## Phase 5: Frontend Development
 
-## How do I deploy this?
+- [ ] Set Up Next.js
+  - [ ] Initialize the Next.js application.
+  - [ ] Create the necessary pages (home, listings, property details, user dashboard).
+- [ ] Implement UI Components
+  - [ ] Build reusable components (forms, buttons, modals).
+  - [ ] Integrate UI libraries (like Tailwind CSS or Chakra UI) for styling.
+- [ ] Connect Frontend with Backend
+  - [ ] Fetch data from the API for property listings, user profiles, etc.
+  - [ ] Handle authentication states (logged in, logged out).
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+## Phase 6: Core Features Implementation
+
+- [ ] Property Listings
+  - [ ] Implement the ability for agents to create, update, and delete property listings.
+  - [ ] Set up image uploads for properties.
+- [ ] Favorites and Inquiries
+  - [ ] Allow users to save properties as favorites.
+  - [ ] Implement the inquiry form for users to contact agents.
+
+## Phase 7: Testing
+
+- [ ] Write Tests
+  - [ ] Create unit and integration tests for both the backend and frontend.
+  - [ ] Test all user flows (registration, login, listing properties, etc.).
+- [ ] User Acceptance Testing
+  - [ ] Gather feedback from real users to improve the application.
+- [ ] Analytics (Posthog)
+- [ ] Ratelimiting (Upstash)
+
+## Phase 8: Deployment
+
+- [ ] Prepare for Deployment
+  - [ ] Set up production configurations (environment variables, security settings).
+  - [ ] Choose a hosting platform (Vercel for Next.js, etc.).
+- [ ] Deploy Application
+  - [ ] Deploy the application to the chosen hosting platform.
+  - [ ] Set up monitoring and error tracking.
+
+## Phase 9: Post-Deployment
+
+- [ ] Gather User Feedback
+  - [ ] Monitor user interactions and gather feedback.
+- [ ] Iterate and Improve
+  - [ ] Make improvements based on user feedback and data analysis.
+  - [ ] Plan for future features and enhancements.
+
+## Additional Considerations
+
+- [ ] Documentation
+  - [ ] Document your code and architecture.
+  - [ ] Create user documentation for end-users.
+- [ ] Marketing and Launch
+  - [ ] Plan a launch strategy (marketing, outreach).
+  - [ ] Prepare for user onboarding and support.
